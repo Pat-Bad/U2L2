@@ -13,11 +13,12 @@ public class EsercizioList {
         for (int i=0; i<numeri; i++) {
             numeriRandom.add((int)(Math.random()*101));
 
-            Collections.sort(numeriRandom);
-            for (int numero : numeriRandom) System.out.println("Lista ordinata" + numeriRandom);
+
 
 
         }
+        Collections.sort(numeriRandom);
+        for (int numero : numeriRandom) System.out.println("Lista ordinata" + numeriRandom);
     }
     public void dueListe(){
         List<List<Integer>> listaBase = new ArrayList<>();
@@ -30,14 +31,12 @@ public class EsercizioList {
 
     }
 
-    public boolean listaBooleano(){
-        List<List<Integer>> listaB = new ArrayList<>();
-        boolean valoreBooleano;
+    public void listaBooleano(List<List<Integer>> listaB, boolean b) {
         listaB.add(numeriRandom);
-        for (int i=0;i<numeriRandom.size();i +=2) {
-            if 
+        for (int i=0; i<listaB.size(); i++){
+            if (i%2 == 0) System.out.println("Numeri in posizione pari: " + i);
+            else System.out.println("Numeri dispari "+ i);
+        }
 
-    }
 
-
-}
+    }}
