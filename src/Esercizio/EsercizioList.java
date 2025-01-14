@@ -31,11 +31,17 @@ public class EsercizioList {
     }
 
 
-    public void listaBooleano(boolean b) {
+    public void listaBooleano(boolean b, List<Integer> lista) {
+        lista = numeriRandom;
+        int x = 0;
 
-        for (int i=0; i<numeriRandom.size(); i++){
-            if (i%2 == 0) System.out.println("Numeri in posizione pari: " + i);
-            else System.out.println("Numeri dispari "+ i);
+        for (Integer intero : lista){x++;
+        if(b){
+            if (x % 2 == 0){System.out.println(intero);}
+            else { if(x % 2 != 0) {System.out.println(intero);}}
+
+        }
+        }
         }
 
-    }}
+    }
