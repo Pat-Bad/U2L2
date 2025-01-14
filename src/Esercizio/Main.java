@@ -1,5 +1,7 @@
 package Esercizio;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main (String[] args){
        // EsercizioSet provaSet = new EsercizioSet();
@@ -7,6 +9,8 @@ public class Main {
         //provaSet.stampaParole();
 
         EsercizioList provaList = new EsercizioList();
-        provaList.generaNumeri();
+       provaList.generaNumeri();
+        //provaList.dueListe();
+        provaList.listaBooleano(true);
     }
 }

@@ -18,22 +18,22 @@ public class EsercizioList {
 
         }
         Collections.sort(numeriRandom);
-        for (int numero : numeriRandom) System.out.println("Lista ordinata" + numeriRandom);
+        System.out.println("Lista ordinata" + numeriRandom);
     }
     public void dueListe(){
         List<List<Integer>> listaBase = new ArrayList<>();
         listaBase.add(numeriRandom);
 
        Collections.sort(numeriRandom);
-       for (int numero : numeriRandom) System.out.println("Ordine ascendente: " + numeriRandom);
+        System.out.println("Ordine ascendente: " + numeriRandom);
        Collections.sort(numeriRandom, Collections.reverseOrder());
-       for (int n : numeriRandom) System.out.println("ordine discendente: " + n);
+       System.out.println("ordine discendente: " + numeriRandom);
 
     }
 
-    public void listaBooleano(List<List<Integer>> listaB, boolean b) {
-        listaB.add(numeriRandom);
-        for (int i=0; i<listaB.size(); i++){
+    public void listaBooleano(boolean b) {
+
+        for (int i=0; i<numeriRandom.size(); i++){
             if (i%2 == 0) System.out.println("Numeri in posizione pari: " + i);
             else System.out.println("Numeri dispari "+ i);
         }
