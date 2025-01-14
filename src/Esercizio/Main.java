@@ -13,6 +13,6 @@ public class Main {
         provaList.generaNumeri();
         provaList.dueListe();
 
-        provaList.listaBooleano(true,integers);
+        provaList.listaBooleano(true);
     }
 }
